@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Images</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Scraped Images for "{{ query }}"</h2>
+    <div class="grid-container">
+        {% for image in images %}
+            <img src="{{ url_for('static', filename='Images/' + image) }}" alt="image">
+        {% endfor %}
+    </div>
+</body>
+</html>
