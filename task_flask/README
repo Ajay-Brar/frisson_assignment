@@ -1,7 +1,7 @@
 ## In this Project:
 # Frontend file: main.py
 it uses flask and HTML to creat a structure and small appliction of flask
-# Backend file: scrape.py
+# Backend file: Main.py
 this is the backend file which uses BeautifulSoup to scrap images from the google
 whick user have search
 # REQUIREMENT:requirement.txt
