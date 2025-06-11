@@ -5,3 +5,5 @@ this is the front end file which will render in the browser .
 This is the flask application file .
 # backend.py:
 This is the backend file which contain selenium script to scrap company data .
+# company_data.csv:
+company scraped data 
