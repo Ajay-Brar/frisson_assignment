@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Info Scraper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #999;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+        }
+        input[type="submit"] {
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Company Info Scraper (Google Maps)</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter company or keyword" value="{{ query }}" required>
+        <input type="submit" value="Search">
+    </form>
+
+    {% if data %}
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ row.Name }}</td>
+                    <td>{{ row.Address }}</td>
+                    <td>{{ row.Phone }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% elif query %}
+        <p>No results found for "{{ query }}"</p>
+    {% endif %}
+</body>
+</html>
