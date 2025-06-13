@@ -1,0 +1,46 @@
+Q= Generate a list of 100 integers containing values between 90 to 130 and store it in the variable `int_list`. After generating the list, find the following:    
+ 
+ (i) Write a Python function to calculate the mean of a given list of numbers. Create a function to find the median of a list of numbers.      
+(ii) Develop a program to compute the mode of a list of integers.    
+(iii) Implement a function to calculate the weighted mean of a list of values and their corresponding weights.      	
+(iv) Write a Python function to find the geometric mean of a list of positive numbers.      
+(v) Create a program to calculate the harmonic mean of a list of values.      
+(vi) Build a function to determine the midrange of a list of numbers (average of the minimum and maximum).     
+ (vii) Implement a Python program to find the trimmed mean of a list, excluding a certain percentage of outliers.
+
+ 2. Generate a list of 500 integers containing values between 200 to 300 and store it in the variable `int_list2`. After generating the list, find the following:   
+(i) Compare the given list of visualization for the given data:          1. Frequency & Gaussian distribution     2. Frequency smoothened KDE plot     3. Gaussian distribution & smoothened KDE plot   
+(ii) Write a Python function to calculate the range of a given list of numbers.   
+(iii) Create a program to find the variance and standard deviation of a list of numbers.   
+(iv) Implement a function to compute the interquartile range (IQR) of a list of values.   
+(v) Build a program to calculate the coefficient of variation for a dataset.      
+(vi) Write a Python function to find the mean absolute deviation (MAD) of a list of numbers.  
+ (vii) Create a program to calculate the quartile deviation of a list of values.      
+(viii) Implement a function to find the range-based coefficient of dispersion for a dataset.
+
+3. Write a Python class representing a discrete random variable with methods to calculate its expected  value and variance.
+
+4. Implement a program to simulate the rolling of a fair six-sided die and calculate the expected value and variance of the outcomes.
+
+5. Create a Python function to generate random samples from a given probability distribution (e.g., binomial, Poisson) and calculate their mean and variance.
+
+6. Write a Python script to generate random numbers from a Gaussian (normal) distribution and compute the mean, variance, and standard deviation of the samples.
+
+7.  Use seaborn library to load tips dataset. Find the following from the dataset for the columns total_bill and tip`:
+
+ (i) Write a Python function that calculates their skewness.   
+
+(ii) Create a program that determines whether the columns exhibit positive skewness, negative skewness, or is approximately symmetric.   
+
+(iii) Write a function that calculates the covariance between two columns.  
+
+(iv) Implement a Python program that calculates the Pearson correlation coefficient between two columns.
+  
+(v) Write a script to visualize the correlation between two specific columns in a Pandas DataFrame using scatter plots.
+
+
+8 . Write a Python function to calculate the probability density function (PDF) of a continuous random variable for a given normal distribution. 
+
+9. Create a program to calculate the cumulative distribution function (CDF) of exponential distribution. 
+
+10.Write a Python function to calculate the probability mass function (PMF) of Poisson distribution.

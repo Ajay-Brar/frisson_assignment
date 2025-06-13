@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask CRUD</title>
+</head>
+<body>
+    <h2>Add User</h2>
+    <form method="POST" action="/add">
+        Name: <input type="text" name="name" required>
+        Email: <input type="email" name="email" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Users</h2>
+    <table border="1">
+        <tr><th>Name</th><th>Email</th><th>Actions</th></tr>
+        {% for user in users %}
+        <tr>
+            <form method="POST" action="/update/{{ user.id }}">
+                <td><input type="text" name="name" value="{{ user.name }}"></td>
+                <td><input type="email" name="email" value="{{ user.email }}"></td>
+                <td>
+                    <button type="submit">Update</button>
+                    <a href="/delete/{{ user.id }}">Delete</a>
+                </td>
+            </form>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
