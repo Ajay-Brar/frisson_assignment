@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="alice">Hi there! I'm Owlbert, your friendly AI assistant. What would you like to talk about today?</Say>
+   
+    <Gather input="speech" action="/respond" method="POST" timeout="5" speechTimeout="auto" language="en-US">
+        <Say>I’m listening…</Say>
+    </Gather>
+   
+    <Say>Oops, I didn’t catch that. Try again later!</Say>
+</Response>
