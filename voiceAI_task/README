@@ -1,0 +1,71 @@
+# main.py :
+It contain main code with optimized response of AI
+
+# voice.py :
+This file contain the code same as main with more voice and tone modulations in it
+you can change it according to your preference.
+
+## About 
+
+# 🎙️ Emotional AI Voice Assistant (Twilio + FastAPI + Groq)
+This project is a real-time AI voice assistant powered by Twilio Voice, FastAPI, and Groq LLaMA3.
+It supports human-like interactions with customizable voices and emotional tones, making your AI sound sweet, professional, friendly—or excited, calm, or dramatic.
+
+# Features
+📞 Outbound phone calls via Twilio
+
+🗣️ Speech input using Twilio <Gather> with speech recognition
+
+🤖 AI response generation using Groq LLaMA3 model
+
+🧠 Emotional SSML-based voice modulation using Amazon Polly voices
+
+🎛 Easily switch between voice styles and tones:
+
+Voice Styles: Sweet & Smooth, Professional, Conversational
+
+Tones: Excited, Calm, Dramatic
+
+# How to Run
+Install Requirements
+terminal
+pip install fastapi uvicorn twilio python-dotenv requests
+Create .env file
+
+# env file:
+TWILIO_ACCOUNT_SID=your_sid
+TWILIO_AUTH_TOKEN=your_token
+TWILIO_PHONE_NUMBER=your_twilio_number
+TO_PHONE_NUMBER=your_verified_number
+GROQ_API_KEY=your_groq_api_key
+
+# Run the app
+terminal
+uvicorn main:app --reload
+Expose via ngrok
+
+terminal
+ngrok http 8000
+Make a call
+Visit:
+
+terminal
+http://localhost:8000/call
+
+# Customization
+Inside the code, change the assistant voice and tone by modifying:
+python
+selected_voice_profile = "friendly_conversational"
+selected_tone = "upbeat_excited"
+
+# 🛠 Tech Stack
+FastAPI (backend server)
+
+Twilio Voice API (calling & speech)
+
+Groq LLaMA3 (AI responses)
+
+Amazon Polly (voice rendering via SSML)
+
+# 📄 License
+This project is open-source for educational and experimental use. Customize and extend as you like!
